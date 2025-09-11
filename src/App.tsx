@@ -183,7 +183,7 @@ function App() {
                 Everyday Essentials, Anytime Convenience.
               </p>
               <p className="text-lg text-gray-600 max-w-xl leading-relaxed text-justify">
-               Serving our community with unique, stylish, and affordable items. From elegant ceramics and giftable décor to everyday fancy essentials, we bring quality and charm at prices that delight. Your one-stop destination for gifts, home accents, and more!”
+               Serving our community with unique, stylish, and affordable items. From elegant ceramics and giftable decor to everyday fancy essentials, we bring quality and charm at prices that delight. Your one-stop destination for gifts, home accents, and more.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">

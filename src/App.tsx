@@ -19,6 +19,7 @@ import {
   Shield,
   Heart,
   ChevronDown,
+  ShoppingBag,
 } from 'lucide-react';
 
 function App() {
@@ -65,9 +66,11 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-gradient-to-br from-red-500 to-yellow-400 rounded-lg flex items-center justify-center">
-                <ShoppingCart className="h-6 w-6 text-white" />
-              </div>
+                      <img 
+            src="src/image/Logo.png" 
+            alt="Logo"
+            className="w-20 h-20"
+          />
               <span className="text-xl font-bold text-gray-800">
                 ShopinGo Mart
               </span>
@@ -160,9 +163,12 @@ function App() {
           <div className="grid lg:grid-cols-2 gap-12 items-center w-full py-20">
             <div className="space-y-8 animate-fadeInUp">
               <div className="flex items-center space-x-4">
-                <div className="w-16 h-16 bg-gradient-to-br from-red-500 to-yellow-400 rounded-2xl flex items-center justify-center shadow-lg">
-                  <ShoppingCart className="h-8 w-8 text-white" />
-                </div>
+                <img 
+            src="src/image/Logo.png" 
+            alt="Logo"
+            className="w-40 h-40"
+          />
+
                 <div>
                   <h1 className="text-4xl md:text-6xl font-bold text-gray-800">
                     <span className="text-red-600">Shopin</span>
@@ -173,15 +179,11 @@ function App() {
                   </h1>
                 </div>
               </div>
-
-              <p className="text-xl md:text-2xl text-gray-600 font-medium">
+              <p className="text-xl md:text-2x1 text-gray-600 font-medium">
                 Everyday Essentials, Anytime Convenience.
               </p>
-
-              <p className="text-lg text-gray-600 max-w-xl leading-relaxed">
-                Serving our community with fresh products, competitive prices,
-                and exceptional service since day one. Your one-stop destination
-                for all daily essentials.
+              <p className="text-lg text-gray-600 max-w-xl leading-relaxed text-justify">
+               Serving our community with unique, stylish, and affordable items. From elegant ceramics and giftable décor to everyday fancy essentials, we bring quality and charm at prices that delight. Your one-stop destination for gifts, home accents, and more!”
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
@@ -231,78 +233,62 @@ function App() {
         </div>
       </section>
 
-      {/* About Us Section */}
-      <section id="about" className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-              About <span className="text-red-600">Us</span>
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Built on the foundation of trust, quality, and community service
-            </p>
-          </div>
+{/* About Us Section */}
+<section id="about" className="py-12 bg-gray-50 scroll-mt-14">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="text-center mb-10">
+      <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+        About <span className="text-red-600">Us</span>
+      </h2>
+      <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+        Built on trust, quality, and a love for serving our community.
+      </p>
+    </div>
 
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="space-y-6 animate-fadeInLeft">
-              <h3 className="text-3xl font-bold text-gray-800">Our Story</h3>
-              <p className="text-lg text-gray-600 leading-relaxed">
-                ShopinGo Mart was born from a simple vision: to create a
-                neighborhood store that truly serves its community. Founded with
-                the belief that everyone deserves access to fresh, quality
-                products at fair prices, we've grown to become a trusted name in
-                our locality.
-              </p>
-              <p className="text-lg text-gray-600 leading-relaxed">
-                Our commitment goes beyond just selling products. We're here to
-                build relationships, support our community, and ensure that
-                every visit to our mart is a pleasant experience. From carefully
-                selected fresh produce to everyday essentials, we curate our
-                inventory with your family's needs in mind.
-              </p>
+    <div className="grid lg:grid-cols-2 gap-16 items-stretch">
+      {/* Left Column: Story Box */}
+      <div className="order-2 lg:order-1 space-y-6 animate-fadeInLeft border border-red-300 p-6 rounded-xl shadow-sm flex flex-col justify-center">
+        <h3 className="text-3xl font-bold text-gray-800">Our Story</h3>
+        <p className="text-lg text-gray-600 leading-relaxed text-justify">
+          ShopinGo Mart was founded by Prem Rauniyar and Rahul Rauniyar with a simple vision: to create a convenient, affordable, and friendly neighborhood store. We wanted a place where everyone could find toys, decorative items, ceramics plates, and everyday essentials without breaking the bank.
+        </p>
+        <p className="text-lg text-gray-600 leading-relaxed text-justify">
+          From carefully chosen products to a warm and helpful team, every part of ShopinGo Mart is designed to make your shopping experience easy, enjoyable, and memorable. We don’t just sell items, we build relationships, trust, and a sense of community with every customer who walks through our doors.
+        </p>  
+      </div>
 
-              <div className="grid grid-cols-2 gap-6 mt-8">
-                <div className="text-center p-6 bg-red-50 rounded-lg">
-                  <div className="text-3xl font-bold text-red-600 mb-2">
-                    500+
-                  </div>
-                  <div className="text-gray-600">Happy Customers</div>
-                </div>
-                <div className="text-center p-6 bg-yellow-50 rounded-lg">
-                  <div className="text-3xl font-bold text-yellow-600 mb-2">
-                    1000+
-                  </div>
-                  <div className="text-gray-600">Products Available</div>
-                </div>
-              </div>
-            </div>
-
-            <div className="relative animate-fadeInRight">
-              <div className="grid grid-cols-2 gap-4">
-                <div className="space-y-4">
-                  <div className="h-40 bg-gradient-to-br from-red-100 to-red-200 rounded-lg flex items-center justify-center">
-                    <Heart className="h-12 w-12 text-red-500" />
-                  </div>
-                  <div className="h-32 bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg flex items-center justify-center">
-                    <Shield className="h-10 w-10 text-yellow-600" />
-                  </div>
-                </div>
-                <div className="space-y-4 mt-8">
-                  <div className="h-32 bg-gradient-to-br from-green-100 to-green-200 rounded-lg flex items-center justify-center">
-                    <Star className="h-10 w-10 text-green-600" />
-                  </div>
-                  <div className="h-40 bg-gradient-to-br from-blue-100 to-blue-200 rounded-lg flex items-center justify-center">
-                    <Users className="h-12 w-12 text-blue-500" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+      {/* Right Column: Image */}
+      <div className="order-1 lg:order-2 animate-fadeInRight flex flex-wrap gap-8 justify-center">
+        {/* Founder */}
+        <div className="flex flex-col items-center">
+          <img 
+            src="src/image/Basant_Rauniyar.png" 
+            alt="Rahul Rauniyar"
+            className="w-48 h-48 object-cover rounded-xl shadow-lg"
+          />
+          <p className="mt-4 text-lg font-semibold text-gray-800">Rahul Rauniyar</p>
+          <p className="text-gray-600">Founder</p>
         </div>
-      </section>
+
+        {/* Co-Founder */}
+        <div className="flex flex-col items-center">
+          <img 
+            src="src/image/50.jpg" 
+            alt="Prem Rauniyar"
+            className="w-48 h-48 object-cover rounded-xl shadow-lg"
+          />
+          <p className="mt-4 text-lg font-semibold text-gray-800">Prem Rauniyar</p>
+          <p className="text-gray-600">Co-Founder</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
       {/* What We Offer Section */}
-      <section id="services" className="py-20 bg-gray-50">
+      <section id="services" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
@@ -316,35 +302,35 @@ function App() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               {
-                icon: ShoppingCart,
-                title: 'Groceries',
+                icon: Package,
+                title: 'Toys & Gifts',
                 description:
-                  'Fresh vegetables, fruits, and daily essentials for your kitchen',
+                  'Playful toys and thoughtful gift items that bring smiles to every age.',
                 color: 'from-green-500 to-green-600',
                 bgColor: 'bg-green-50',
                 textColor: 'text-green-600',
               },
               {
-                icon: Coffee,
-                title: 'Beverages',
+                icon: ShoppingBag,
+                title: 'Home & Kitchen Picks',
                 description:
-                  'Refreshing drinks, juices, and beverages for every taste',
+                  'Elegant ceramics plates, and useful pieces to make your home stylish and practical.',
                 color: 'from-blue-500 to-blue-600',
                 bgColor: 'bg-blue-50',
                 textColor: 'text-blue-600',
               },
               {
-                icon: Package,
-                title: 'Snacks',
-                description: 'Delicious snacks and treats for your cravings',
+                icon: CheckCircle,
+                title: 'Fancy & Decorative Items',
+                description: 'Trendy, eye-catching decor and accessories, perfect for gifting or elevating your space.',
                 color: 'from-orange-500 to-orange-600',
                 bgColor: 'bg-orange-50',
                 textColor: 'text-orange-600',
               },
               {
                 icon: Home,
-                title: 'Household Essentials',
-                description: 'Cleaning supplies and home care products',
+                title: 'Everyday Essentials',
+                description: 'Handy items you’ll love to use daily, all at reasonable prices.',
                 color: 'from-purple-500 to-purple-600',
                 bgColor: 'bg-purple-50',
                 textColor: 'text-purple-600',
@@ -373,7 +359,7 @@ function App() {
       </section>
 
       {/* Why Choose Us Section */}
-      <section id="features" className="py-20 bg-white">
+      <section id="features" className="py-20 bg-grey-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
@@ -387,9 +373,9 @@ function App() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               {
-                icon: CheckCircle,
-                title: 'Fresh Products',
-                description: 'Daily fresh arrivals and quality-checked items',
+                icon: Package,
+                title: 'Unique Collection',
+                description: 'Toys, ceramics plates, and fancy items all in one place.',
                 color: 'text-green-500',
                 bgColor: 'bg-green-100',
               },
@@ -439,7 +425,7 @@ function App() {
       </section>
 
       {/* Contact & Location Section */}
-      <section id="contact" className="py-20 bg-gray-50">
+      <section id="contact" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
@@ -464,7 +450,7 @@ function App() {
                     </div>
                     <div>
                       <div className="font-semibold text-gray-800">Phone</div>
-                      <div className="text-gray-600">+91 98765 43210</div>
+                      <div className="text-gray-600">+977 9705395990</div>
                     </div>
                   </div>
 
@@ -476,12 +462,15 @@ function App() {
                       <div className="font-semibold text-gray-800">
                         WhatsApp
                       </div>
-                      <a
-                        href="https://wa.me/919876543210"
-                        className="text-green-600 hover:underline"
-                      >
-                        Chat with us
-                      </a>
+                     <a
+  href="https://wa.me/+9779705395990"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-green-600 hover:underline"
+>
+  Chat on WhatsApp
+</a>
+
                     </div>
                   </div>
 
@@ -492,9 +481,9 @@ function App() {
                     <div>
                       <div className="font-semibold text-gray-800">Address</div>
                       <div className="text-gray-600">
-                        123 Main Street, City Center
+                        First floor, Indra Jyoti Complex 
                         <br />
-                        Your City, State 123456
+                       Amarpath, Butwal
                       </div>
                     </div>
                   </div>
@@ -503,66 +492,111 @@ function App() {
 
               {/* Map Placeholder */}
               <div className="bg-gray-200 rounded-lg h-64 flex items-center justify-center">
-                <div className="text-center text-gray-600">
-                  <MapPin className="h-12 w-12 mx-auto mb-2" />
-                  <p>Google Maps Integration</p>
-                  <p className="text-sm">Store Location Preview</p>
-                </div>
+               <div className="rounded-lg h-64 w-full overflow-hidden shadow-md">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d483.56527190958997!2d83.46401963015764!3d27.70260730034827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399687a6fa26fd27%3A0x57a5a7704d41c007!2sIndra-Jyoti%20Complex!5e1!3m2!1sen!2snp!4v1756979088955!5m2!1sen!2snp"
+    width="100%"
+    height="100%"
+    style={{ border: 0 }}
+    allowFullScreen
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+  ></iframe>
+</div>
               </div>
             </div>
 
+
+
             {/* Contact Form */}
-            <div className="animate-fadeInRight">
-              <div className="bg-white p-8 rounded-2xl shadow-lg">
-                <h3 className="text-2xl font-bold text-gray-800 mb-6">
-                  Send us a Message
-                </h3>
-                <form className="space-y-6">
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      Name
-                    </label>
-                    <input
-                      type="text"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent transition-colors"
-                      placeholder="Your name"
-                    />
-                  </div>
+           <div className="animate-fadeInRight">
+  <div className="bg-white p-8 rounded-2xl shadow-lg">
+    <h3 className="text-2xl font-bold text-gray-800 mb-6">
+      Send us a Message
+    </h3>
+   <form
+  onSubmit={async (e) => {
+    e.preventDefault();
+    const form = e.currentTarget;
+    const formData = {
+      name: (form.elements.namedItem("name") as HTMLInputElement).value,
+      email: (form.elements.namedItem("email") as HTMLInputElement).value,
+      message: (form.elements.namedItem("message") as HTMLTextAreaElement).value,
+    };
 
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      Email
-                    </label>
-                    <input
-                      type="email"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent transition-colors"
-                      placeholder="your@email.com"
-                    />
-                  </div>
+    try {
+      const response = await fetch("https://formspree.io/f/mdklpgqy", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
 
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      Message
-                    </label>
-                    <textarea
-                      rows={5}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent transition-colors resize-none"
-                      placeholder="Your message..."
-                    ></textarea>
-                  </div>
+      if (response.ok) {
+        alert("Message sent successfully!");
+        form.reset();
+      } else {
+        alert("Failed to send message. Try again.");
+      }
+    } catch (error) {
+      console.error(error);
+      alert("Error occurred. Try again later.");
+    }
+  }}
+  className="space-y-6"
+>
+  <div>
+    <label className="block text-sm font-medium text-gray-700 mb-2">
+      Name
+    </label>
+    <input
+      type="text"
+      name="name"        // ✅ Added this
+      required            // optional, makes it mandatory
+      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent transition-colors"
+      placeholder="Your name"
+    />
+  </div>
 
-                  <button
-                    type="submit"
-                    className="w-full bg-gradient-to-r from-red-500 to-red-600 text-white py-3 px-6 rounded-lg font-semibold hover:from-red-600 hover:to-red-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
-                  >
-                    Send Message
-                  </button>
-                </form>
+  <div>
+    <label className="block text-sm font-medium text-gray-700 mb-2">
+      Email
+    </label>
+    <input
+      type="email"
+      name="email"       // ✅ Added this
+      required
+      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent transition-colors"
+      placeholder="your@email.com"
+    />
+  </div>
+
+  <div>
+    <label className="block text-sm font-medium text-gray-700 mb-2">
+      Message
+    </label>
+    <textarea
+      name="message"     // ✅ Added this
+      required
+      rows={5}
+      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent transition-colors resize-none"
+      placeholder="Your message..."
+    ></textarea>
+  </div>
+
+  <button
+    type="submit"
+    className="w-full bg-gradient-to-r from-red-500 to-red-600 text-white py-3 px-6 rounded-lg font-semibold hover:from-red-600 hover:to-red-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+  >
+    Send Message
+  </button>
+</form>
+
               </div>
             </div>
           </div>
         </div>
       </section>
+      
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-16">
@@ -647,7 +681,7 @@ function App() {
           </div>
 
           <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 ShopinGo Mart Pvt. Ltd. All rights reserved.</p>
+            <p>&copy; 2025 ShopinGo Mart Pvt. Ltd. All rights reserved.</p>
           </div>
         </div>
       </footer>

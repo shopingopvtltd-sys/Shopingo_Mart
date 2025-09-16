@@ -265,15 +265,15 @@ function App() {
   <p className="text-lg text-gray-700 leading-relaxed text-justify">
     <span className="font-semibold text-red-500">To Our Shop,</span>
     <br />
-    Inaugurated with a simple vision: to create a convenient, affordable, 
+    Inaugurated with a simple vision to create a convenient, affordable, 
     and friendly store where everyone can find toys, decor items, ceramics, 
     and essential products for everyday life.
   </p>
 
   <p className="text-lg text-gray-700 leading-relaxed text-justify">
-    We proudly serve the local community by offering vibrant and unique 
-    products, while creating a lively place that enhances your shopping 
-    experience.
+    We proudly serves the local community by offering vibrant and unique 
+    products and create a lively place that enhances your shopping 
+    experience with us...
   </p>
 </div>
 

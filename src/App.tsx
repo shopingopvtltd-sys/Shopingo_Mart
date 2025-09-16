@@ -164,7 +164,7 @@ function App() {
             <div className="space-y-8 animate-fadeInUp">
               <div className="flex items-center space-x-4">
                 <img 
-            src="image/Logo.png" 
+            src="/image/Logo.png" 
             alt="Logo"
             className="w-40 h-40"
           />

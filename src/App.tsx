@@ -18,6 +18,8 @@ import {
   Truck,
   Shield,
   Heart,
+  Tiktok,
+  Mail,
   ChevronDown,
   ShoppingBag,
 } from 'lucide-react';
@@ -67,7 +69,7 @@ function App() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-2">
                       <img 
-            src="/image/Logo.png" 
+            src="src/image/Logo.png" 
             alt="Logo"
             className="w-20 h-20"
           />
@@ -182,8 +184,11 @@ function App() {
               <p className="text-xl md:text-2x1 text-gray-600 font-medium">
                 Everyday Essentials, Anytime Convenience.
               </p>
-              <p className="text-lg text-gray-600 max-w-xl leading-relaxed text-justify">
-               Serving our community with unique, stylish, and affordable items. From elegant ceramics and giftable decor to everyday fancy essentials, we bring quality and charm at prices that delight. Your one-stop destination for gifts, home accents, and more.
+
+              <p className="text-lg text-gray-600 max-w-xl leading-relaxed">
+                Serving our community with fresh products, competitive prices,
+                and exceptional service since day one. Your one-stop destination
+                for all daily essentials.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
@@ -211,7 +216,7 @@ function App() {
                       <ShoppingCart className="h-12 w-12 text-red-500" />
                     </div>
                     <h3 className="text-2xl font-bold text-gray-800">
-                      Fresh & Quality
+                      With Love
                     </h3>
                     <p className="text-gray-600 px-4">
                       Premium products for your family's needs
@@ -247,40 +252,98 @@ function App() {
 
     <div className="grid lg:grid-cols-2 gap-16 items-stretch">
       {/* Left Column: Story Box */}
-      <div className="order-2 lg:order-1 space-y-6 animate-fadeInLeft border border-red-300 p-6 rounded-xl shadow-sm flex flex-col justify-center">
-        <h3 className="text-3xl font-bold text-gray-800">Our Story</h3>
-        <p className="text-lg text-gray-600 leading-relaxed text-justify">
-          ShopinGo Mart was founded by Prem Rauniyar and Rahul Rauniyar with a simple vision: to create a convenient, affordable, and friendly neighborhood store. We wanted a place where everyone could find toys, decorative items, ceramics plates, and everyday essentials without breaking the bank.
-        </p>
-        <p className="text-lg text-gray-600 leading-relaxed text-justify">
-          From carefully chosen products to a warm and helpful team, every part of ShopinGo Mart is designed to make your shopping experience easy, enjoyable, and memorable. We don’t just sell items, we build relationships, trust, and a sense of community with every customer who walks through our doors.
-        </p>  
-      </div>
+<div className="order-2 lg:order-1 space-y-6 animate-fadeInLeft border border-red-300 p-8 rounded-2xl shadow-md bg-white flex flex-col justify-center">
+
+  <div className="flex items-center gap-3">
+  <span className="text-3xl">🙏</span>
+  <h2 className="text-3xl font-extrabold text-gray-800 tracking-wide">
+    Welcome
+  </h2>
+</div>
+
+
+  <p className="text-lg text-gray-700 leading-relaxed text-justify">
+    <span className="font-semibold text-red-500">To Our Shop,</span>
+    <br />
+    Inaugurated with a simple vision: to create a convenient, affordable, 
+    and friendly store where everyone can find toys, decor items, ceramics, 
+    and essential products for everyday life.
+  </p>
+
+  <p className="text-lg text-gray-700 leading-relaxed text-justify">
+    We proudly serve the local community by offering vibrant and unique 
+    products, while creating a lively place that enhances your shopping 
+    experience.
+  </p>
+</div>
+
 
       {/* Right Column: Image */}
-      <div className="order-1 lg:order-2 animate-fadeInRight flex flex-wrap gap-8 justify-center">
-        {/* Founder */}
-        <div className="flex flex-col items-center">
-          <img 
-            src="src/image/Basant_Rauniyar.png" 
-            alt="Rahul Rauniyar"
-            className="w-48 h-48 object-cover rounded-xl shadow-lg"
-          />
-          <p className="mt-4 text-lg font-semibold text-gray-800">Rahul Rauniyar</p>
-          <p className="text-gray-600">Founder</p>
-        </div>
+<div className="order-1 lg:order-2 animate-fadeInRight flex flex-wrap gap-10 justify-center">
+  {/* Founder */}
+  <div className="flex flex-col items-center bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
+    <img 
+      src="/image/Basant_Rauniyar.png" 
+      alt="Rahul Gupta"
+      className="w-44 h-44 object-cover rounded-xl shadow-md border border-gray-200"
+    />
+    <p className="mt-4 text-xl font-bold text-gray-800">Rahul Gupta</p>
+    <p className="text-gray-500 text-sm tracking-wide uppercase">Founder</p>
+    {/* Social Links */}
+    <div className="mt-3 space-y-2 text-sm text-gray-700">
+    <div className="flex items-center gap-2">
+      <Facebook className="w-5 h-5 text-blue-500" />
+      <a href="https://facebook.com/rahul.gupta" target="_blank" rel="noopener noreferrer" className="hover:underline">
+        Facebook
+      </a>
+    </div>
+    <div className="flex items-center gap-2">
+      <Instagram className="w-5 h-5 text-pink-500" />
+      <a href="https://instagram.com/rahul.gupta" target="_blank" rel="noopener noreferrer" className="hover:underline">
+        Instagram
+      </a>
+    </div>
+    <div className="flex items-center gap-2">
+      <Mail className="w-5 h-5 text-red-500" />
+      <a href="mailto:rahul.gupta@example.com" className="hover:underline">
+        rahul.gupta@example.com
+      </a>
+    </div>
+  </div>
 
-        {/* Co-Founder */}
-        <div className="flex flex-col items-center">
-          <img 
-            src="src/image/50.jpg" 
-            alt="Prem Rauniyar"
-            className="w-48 h-48 object-cover rounded-xl shadow-lg"
-          />
-          <p className="mt-4 text-lg font-semibold text-gray-800">Prem Rauniyar</p>
-          <p className="text-gray-600">Co-Founder</p>
-        </div>
-      </div>
+  </div>
+
+  {/* Co-Founder */}
+  <div className="flex flex-col items-center bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
+    <img 
+      src="/image/50.jpg" 
+      alt="Prem Rauniyar"
+      className="w-44 h-44 object-cover rounded-xl shadow-md border border-gray-200"
+    />
+    <p className="mt-4 text-xl font-bold text-gray-800">Prem Rauniyar</p>
+    <p className="text-gray-500 text-sm tracking-wide uppercase">Co-Founder</p>
+     <div className="mt-3 space-y-2 text-sm text-gray-700">
+    <div className="flex items-center gap-2">
+      <Facebook className="w-5 h-5 text-blue-500" />
+      <a href="https://facebook.com/prem.rauniyar" target="_blank" rel="noopener noreferrer" className="hover:underline">
+        Facebook
+      </a>
+    </div>
+    <div className="flex items-center gap-2">
+      <Instagram className="w-5 h-5 text-pink-500" />
+      <a href="https://instagram.com/prem.rauniyar" target="_blank" rel="noopener noreferrer" className="hover:underline">
+        Instagram
+      </a>
+    </div>
+    <div className="flex items-center gap-2">
+      <Mail className="w-5 h-5 text-red-500" />
+      <a href="mailto:prem.rauniyar@example.com" className="hover:underline">
+        prem.rauniyar@example.com
+      </a>
+    </div>
+  </div>
+  </div>
+</div>
     </div>
   </div>
 </section>
@@ -320,17 +383,17 @@ function App() {
                 textColor: 'text-blue-600',
               },
               {
-                icon: CheckCircle,
-                title: 'Fancy & Decorative Items',
-                description: 'Trendy, eye-catching decor and accessories, perfect for gifting or elevating your space.',
+                icon: Package,
+                title: 'Snacks',
+                description: 'Delicious snacks and treats for your cravings',
                 color: 'from-orange-500 to-orange-600',
                 bgColor: 'bg-orange-50',
                 textColor: 'text-orange-600',
               },
               {
                 icon: Home,
-                title: 'Everyday Essentials',
-                description: 'Handy items you’ll love to use daily, all at reasonable prices.',
+                title: 'Household Essentials',
+                description: 'Cleaning supplies and home care products',
                 color: 'from-purple-500 to-purple-600',
                 bgColor: 'bg-purple-50',
                 textColor: 'text-purple-600',
@@ -608,10 +671,10 @@ function App() {
                 <div className="w-10 h-10 bg-gradient-to-br from-red-500 to-yellow-400 rounded-lg flex items-center justify-center">
                   <ShoppingCart className="h-6 w-6 text-white" />
                 </div>
-                <span className="text-xl font-bold">ShopinGo Mart</span>
+                <span className="text-xl font-bold">ShopinGo Market</span>
               </div>
               <p className="text-gray-400 leading-relaxed">
-                Your trusted neighborhood mart, serving the community with
+                Your trusted neighborhood market, serving the community with
                 quality products and exceptional service.
               </p>
             </div>
@@ -656,13 +719,17 @@ function App() {
               <h4 className="text-lg font-semibold">Follow Us</h4>
               <div className="flex space-x-4">
                 <a
-                  href="#"
+                  href="https://www.facebook.com/share/17MtCws9oW/?mibextid=wwXIfr"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center hover:bg-blue-700 transition-colors"
                 >
                   <Facebook className="h-5 w-5" />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.instagram.com/shopingomarketpvt.ltd?igsh=NGoyYzIzbDN6enU3"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-10 h-10 bg-pink-600 rounded-lg flex items-center justify-center hover:bg-pink-700 transition-colors"
                 >
                   <Instagram className="h-5 w-5" />
@@ -681,7 +748,7 @@ function App() {
           </div>
 
           <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-            <p>&copy; 2025 ShopinGo Mart Pvt. Ltd. All rights reserved.</p>
+            <p>&copy; 2025 ShopinGo Market Pvt. Ltd. All rights reserved.</p>
           </div>
         </div>
       </footer>

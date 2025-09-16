@@ -72,7 +72,7 @@ function App() {
             className="w-20 h-20"
           />
               <span className="text-xl font-bold text-gray-800">
-                ShopinGo Mart
+                ShopinGo Market
               </span>
             </div>
 
@@ -164,7 +164,7 @@ function App() {
             <div className="space-y-8 animate-fadeInUp">
               <div className="flex items-center space-x-4">
                 <img 
-            src="src/image/Logo.png" 
+            src="image/Logo.png" 
             alt="Logo"
             className="w-40 h-40"
           />
@@ -174,7 +174,7 @@ function App() {
                     <span className="text-red-600">Shopin</span>
                     <span className="text-yellow-500">Go</span>
                     <span className="block text-3xl md:text-4xl text-gray-700 mt-2">
-                      Mart Pvt. Ltd.
+                      Market Pvt. Ltd.
                     </span>
                   </h1>
                 </div>

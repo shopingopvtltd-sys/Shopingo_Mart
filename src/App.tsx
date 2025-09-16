@@ -67,7 +67,7 @@ function App() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-2">
                       <img 
-            src="src/image/Logo.png" 
+            src="Shopingo_Mart/image/Logo.png" 
             alt="Logo"
             className="w-20 h-20"
           />

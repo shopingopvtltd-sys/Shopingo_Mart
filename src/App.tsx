@@ -283,7 +283,7 @@ function App() {
   {/* Founder */}
   <div className="flex flex-col items-center bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
     <img 
-      src="/image/Basant_Rauniyar.png" 
+      src="/image/rahul.png" 
       alt="Rahul Gupta"
       className="w-44 h-44 object-cover rounded-xl shadow-md border border-gray-200"
     />
@@ -306,7 +306,7 @@ function App() {
     <div className="flex items-center gap-2">
       <Mail className="w-5 h-5 text-red-500" />
       <a href="mailto:rahul.gupta@example.com" className="hover:underline">
-        rahul.gupta@example.com
+        rahulrauniyar234@gmail.com
       </a>
     </div>
   </div>
@@ -338,7 +338,7 @@ function App() {
     <div className="flex items-center gap-2">
       <Mail className="w-5 h-5 text-red-500" />
       <a href="mailto:prem.rauniyar@example.com" className="hover:underline">
-        prem.rauniyar@example.com
+        premrauniyar2019@gmail.com
       </a>
     </div>
   </div>

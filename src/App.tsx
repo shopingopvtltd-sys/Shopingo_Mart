@@ -293,7 +293,7 @@ function App() {
     <div className="mt-3 space-y-2 text-sm text-gray-700">
     <div className="flex items-center gap-2">
       <Facebook className="w-5 h-5 text-blue-500" />
-      <a href="https://facebook.com/rahul.gupta" target="_blank" rel="noopener noreferrer" className="hover:underline">
+      <a href="https://facebook.com/rahulrauniyar2254" target="_blank" rel="noopener noreferrer" className="hover:underline">
         Facebook
       </a>
     </div>
@@ -325,7 +325,7 @@ function App() {
      <div className="mt-3 space-y-2 text-sm text-gray-700">
     <div className="flex items-center gap-2">
       <Facebook className="w-5 h-5 text-blue-500" />
-      <a href="https://facebook.com/prem.rauniyar" target="_blank" rel="noopener noreferrer" className="hover:underline">
+      <a href="https://facebook.com/itsprem12" target="_blank" rel="noopener noreferrer" className="hover:underline">
         Facebook
       </a>
     </div>

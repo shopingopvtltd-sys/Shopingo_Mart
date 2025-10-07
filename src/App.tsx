@@ -299,7 +299,7 @@ function App() {
     </div>
     <div className="flex items-center gap-2">
       <Instagram className="w-5 h-5 text-pink-500" />
-      <a href="https://instagram.com/rahul.gupta" target="_blank" rel="noopener noreferrer" className="hover:underline">
+      <a href="https://www.instagram.com/rahul_rauniyar2254?igsh=MWZoaXFuZHg5NndxMQ==" target="_blank" rel="noopener noreferrer" className="hover:underline">
         Instagram
       </a>
     </div>
@@ -331,7 +331,7 @@ function App() {
     </div>
     <div className="flex items-center gap-2">
       <Instagram className="w-5 h-5 text-pink-500" />
-      <a href="https://instagram.com/prem.rauniyar" target="_blank" rel="noopener noreferrer" className="hover:underline">
+      <a href="https://www.instagram.com/its_prem12?igsh=bGlhZG9xcWV2dXN4&utm_source=qr" target="_blank" rel="noopener noreferrer" className="hover:underline">
         Instagram
       </a>
     </div>

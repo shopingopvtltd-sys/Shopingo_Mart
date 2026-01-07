@@ -316,7 +316,7 @@ function App() {
   {/* Co-Founder */}
   <div className="flex flex-col items-center bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
     <img 
-      src="/image/50.jpg" 
+      src="/image/50.JPG" 
       alt="Prem Rauniyar"
       className="w-44 h-44 object-cover rounded-xl shadow-md border border-gray-200"
     />
